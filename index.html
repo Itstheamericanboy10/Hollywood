@@ -315,117 +315,29 @@
 				</div>
 				<!-- /Section header -->
 
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">SILVER PLAN</span>
-							<div class="price">
-								<h3>30<span class="duration">USD</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p><br><br></p>
-							</li>
-							<li>
-								<p><br></p>
-							</li>
-							<li>
-								<p><br></p>
-							</li>
-							<li>
-								<p><br></p>
-							</li>
-							<li>
-								<p></p>
-							</li>
-							<li>
-								<p></p>
-							</li>
-							<li>
-								<p></p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
 
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">PREMIUM PLAN</span>
-							<div class="price">
-								<h3>$60<span class="duration">USD</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p></p>
-							</li>
-							<li>
-								<p> <br><br></p>
-							</li>
-							<li>
-								<p><br></p>
-							</li>
-							<li>
-								<p><br></p>
-							</li>
-							<li>
-								<p></p>
-							</li>
-							<li>
-								<p></p>
-							</li>
-							<li>
-								<p><br><br></p>
-							</li>
-							<li>
-								<p></p>
-							</li>
-							<li>
-								<p></p>
-					
-							</li>		
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
 
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">GOLD PLAN</span>
-							<div class="price">
-								<h3>$120<span class="duration">/ USD</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p></p>
-							</li>
-							<li>
-								<p></p>
-							</li>
-							<li>
-								<p></p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
+				<div id="paypal-button-container-P-3PG57904BW806593HM3FL3HY"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AY0AGB6yt4nFHe3o_IegslNfYZH9V72prcl9hJs7W_zPRoHU093YYf2fBWjJKWrTm_ZrGh4goTak5Nw2&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-3PG57904BW806593HM3FL3HY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-3PG57904BW806593HM3FL3HY'); // Renders the PayPal button
+</script>
 
 			</div>
 			<!-- Row -->
