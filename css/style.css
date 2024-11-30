@@ -825,54 +825,6 @@ header {
     transition-delay: 0.2s;
     opacity: 1;
 }
-/*------------------------------------*\
-	Video
-\*------------------------------------*/
-
-.workvideo{
-	color: #FF0000;
-}
-
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-
-.workvideo:hover .work-content span {
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
-    opacity: 1;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-}
-
-.workvideo .work-link {
-    text-align: center;
-    margin-top: 20px;
-    opacity: 0;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-}
-
-.workvideo .work-link a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #6195FF;
-    color: #FFF;
-    line-height: 50px;
-    text-align: center;
-}
-
-.workvideo:hover .work-link {
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-    opacity: 1;
-}
-
-
 
 
 /*------------------------------------*\
